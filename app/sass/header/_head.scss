@@ -1,0 +1,166 @@
+.header{
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #ff797e;
+
+  &:after{
+    position: absolute;
+    display: inline;
+    content: "";
+    height: 1px;
+    width: 1130px;
+    background-color: #ff96ae;
+    left: 13%;
+    top: 65%;
+  }
+
+  &__logo{
+    position: relative;
+    float: left;
+    width: 87px;
+    height: 86px;
+    overflow: hidden;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  }
+
+  &__adress{
+    position: relative;
+    float: left;
+    width: 23%;
+    color: white;
+    font-family: $QanelasExtraBold;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 35px;
+    padding-left: 80px;
+    box-sizing: border-box;
+
+      &:before{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 13px;
+        height: 12px;
+        background-image: url("../img/icons/arrow.png");
+        background-repeat: no-repeat;
+        left: 60px;
+        top: 40px;
+      }
+  }
+
+  &__number{
+    position: relative;
+    float: left;
+    width: 23%;
+    color: white;
+    font-family: $QanelasExtraBold;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 35px;
+    padding-left: 80px;
+    box-sizing: border-box;
+
+    &:before{
+      position: absolute;
+      display: block;
+      content: "";
+      width: 13px;
+      height: 12px;
+      background-image: url("../img/icons/phone.png");
+      background-repeat: no-repeat;
+      left: 64px;
+      top: 40px;
+    }
+  }
+
+  &__email{
+    position: relative;
+    float: left;
+    width: 23%;
+    color: white;
+    font-family: $QanelasExtraBold;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 35px;
+    padding-left: 75px;
+    box-sizing: border-box;
+
+    &:before{
+      position: absolute;
+      display: block;
+      content: "";
+      width: 15px;
+      height: 12px;
+      background-image: url("../img/icons/message.png");
+      background-repeat: no-repeat;
+      left: 55px;
+      top: 41px;
+    }
+  }
+
+  &__box{
+    position: relative;
+    float: left;
+    width: 15%;
+    display: flex;
+    margin-top: 34px;
+    margin-left: 95px;
+
+
+
+      &-elem{
+        position: relative;
+        float: left;
+        width: 25px;
+        height: 20px;
+        overflow: hidden;
+        margin-right: 6px;
+
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+      }
+  }
+
+  &__navigation{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  &__menu{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+      li{
+        position: relative;
+        float: left;
+        margin-right: 25px;
+
+          a{
+            position: relative;
+            float: left;
+            width: 100%;
+            color: white;
+            font-family: $QanelasExtraBold;
+            font-size: 16px;
+            font-weight: 700;
+          }
+      }
+  }
+}
