@@ -1,0 +1,55 @@
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    text-align: left;
+    vertical-align: baseline;
+    //font-family: 'Open Sans', sans-serif;
+    //font-family: 'PT Sans', sans-serif;
+    //font-family: 'Roboto', sans-serif;
+    //font-family: 'Source Sans Pro', sans-serif;
+    //font-family: 'Lato', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover, &:focus, &:active{
+        text-decoration: none;
+    }
+}
+
+input{
+    outline: none;
+    &:hover, &:focus, &:active{
+        outline: none;
+    }
+}
+
+textarea{
+    outline: none;
+    &:hover, &:focus, &:active{
+        outline: none;
+    }
+}
+
+%clearfix {
+    *zoom: 1;
+    &:after {
+        content: '';
+        display: table;
+        line-height: 0;
+        clear: both;
+    }
+}
