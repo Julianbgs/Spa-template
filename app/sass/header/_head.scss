@@ -1,8 +1,8 @@
 .header{
-  position: relative;
+  position: absolute;
   float: left;
   width: 100%;
-  background-color: #ff797e;
+  z-index: 1;
 
   &:after{
     position: absolute;
@@ -157,10 +157,26 @@
             float: left;
             width: 100%;
             color: white;
-            font-family: $QanelasExtraBold;
+            font-family: $QanelasBold;
             font-size: 16px;
             font-weight: 700;
           }
       }
+  }
+}
+
+.active{
+  position: relative;
+  float: left;
+
+  &:after{
+    position: absolute;
+    display: inline;
+    content: "";
+    width: 57px;
+    height: 4px;
+    background-color: white;
+    top: 30px;
+    left: 0;
   }
 }
