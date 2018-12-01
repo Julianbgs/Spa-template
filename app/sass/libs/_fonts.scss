@@ -34,6 +34,28 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'QanelasHeavy';
+  src: url('../fonts/QanelasHeavy/QanelasHeavy.eot') format('embedded-opentype'),
+  url('../fonts/QanelasHeavy/QanelasHeavy.woff2') format('woff2'),
+  url('../fonts/QanelasHeavy/QanelasHeavy.woff') format('woff'),
+  url('../fonts/QanelasHeavy/QanelasHeavy.ttf') format('truetype'),
+  url('../fonts/QanelasHeavy/QanelasHeavy.svg') format('svg');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'QanelasRegular';
+  src: url('../fonts/QanelasRegular/QanelasRegular.eot') format('embedded-opentype'),
+  url('../fonts/QanelasRegular/QanelasRegular.woff2') format('woff2'),
+  url('../fonts/QanelasRegular/QanelasRegular.woff') format('woff'),
+  url('../fonts/QanelasRegular/QanelasRegular.ttf') format('truetype'),
+  url('../fonts/QanelasRegular/QanelasRegular.svg') format('svg');
+  font-weight: normal;
+}
+
 $QanelasExtraBold:'QanelasExtraBold';
 $QanelasBold:'QanelasBold';
 $QanelasBlack:'QanelasBlack';
+$QanelasHeavy:'QanelasHeavy';
+$QanelasRegular:'QanelasRegular';
