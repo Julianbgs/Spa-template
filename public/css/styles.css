@@ -520,4 +520,130 @@ textarea:active {
   margin-bottom: 100px;
 }
 
+.about {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.about__img-bg {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 787px;
+  background-image: url("../img/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__box {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 787px;
+  background-image: url("../img/about-pink-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__title {
+  position: absolute;
+  color: white;
+  font-family: "QanelasHeavy";
+  font-size: 75px;
+  font-weight: 800;
+  top: 45px;
+  left: -97px;
+}
+
+.about__title:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 155px;
+  height: 119px;
+  background-image: url("../img/about-object.png");
+  background-repeat: no-repeat;
+  top: -35px;
+  left: 225px;
+}
+
+.about__beauty {
+  position: relative;
+  margin-top: 220px;
+  margin-left: 80px;
+  color: white;
+  font-family: "QanelasHeavy";
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.about__sub-title {
+  position: relative;
+  margin-left: 80px;
+  color: white;
+  font-family: "QanelasBlack";
+  font-size: 45px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.about__descr {
+  position: relative;
+  width: 483px;
+  color: white;
+  font-family: "QanelasRegular";
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+
+.about__sub-descr {
+  position: relative;
+  width: 483px;
+  color: white;
+  font-family: "QanelasRegular";
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+
+.about__more {
+  position: relative;
+  float: left;
+  width: 30%;
+  margin-left: 340px;
+  color: white;
+  font-family: "QanelasBold";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.about__more:before {
+  position: absolute;
+  display: inline;
+  content: "";
+  width: 246px;
+  height: 1px;
+  background-color: white;
+  left: -110%;
+  top: 15px;
+}
+
+.about__more:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/icons/button-arrow.png");
+  background-repeat: no-repeat;
+  top: 10px;
+  left: 200px;
+}
+
 /*# sourceMappingURL=styles.css.map */
