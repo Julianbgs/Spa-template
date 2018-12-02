@@ -12,4 +12,11 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true
     });
+
+    $('  .review__slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+    });
 });
