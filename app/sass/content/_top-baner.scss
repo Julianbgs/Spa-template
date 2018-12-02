@@ -16,6 +16,10 @@
     font-weight: 900;
     margin-top: 240px;
     margin-bottom: 0;
+
+    @include breakpoint(max-width 480px){
+      margin-top: 400px;
+    }
   }
 
   &__sub-title{
@@ -38,18 +42,10 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
-  }
 
-
-
-  &__text-bg{
-    position: absolute;
-    width: 711px;
-    height: 319px;
-    background-image: url("../img/bg-text.png");
-    background-repeat: no-repeat;
-    top: 35%;
-    display: none;
+    @include breakpoint(max-width 480px){
+      display: none;
+    }
   }
 }
 

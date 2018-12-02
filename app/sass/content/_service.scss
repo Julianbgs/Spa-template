@@ -22,6 +22,14 @@
           background-repeat: no-repeat;
           right: 16%;
           top: 5%;
+
+          @include breakpoint(max-width 1024px){
+            right: 10%;
+          }
+
+          @include breakpoint(max-width 768px){
+            right: 5%;
+          }
         }
     }
 
@@ -45,6 +53,35 @@
     border-radius: 10px;
     box-shadow: 1.5px 2.6px 38px rgba(0, 0, 0, 0.11);
 
+    @include breakpoint(max-width 1024px){
+      width: calc(33% - 30px);
+    }
+
+    @include breakpoint(max-width 480px){
+      width: calc(50% - 10px);
+      margin-right: 10px;
+    }
+
+    &:nth-of-type(4){
+      @include breakpoint(max-width 1024px){
+        display: none;
+      }
+
+      @include breakpoint(max-width 480px){
+        display: block;
+      }
+    }
+
+    &:nth-of-type(8){
+      @include breakpoint(max-width 1024px){
+        display: none;
+      }
+
+      @include breakpoint(max-width 480px){
+        display: block;
+      }
+    }
+
       &-img{
         position: relative;
         float: left;
@@ -52,6 +89,10 @@
         height: 150px;
         overflow: hidden;
         border-radius: 10px 10px 0 0;
+
+        @include breakpoint(max-width 1024px){
+          width: 100%;
+        }
 
           img{
             width: 100%;

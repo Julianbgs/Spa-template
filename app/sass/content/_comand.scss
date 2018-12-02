@@ -30,6 +30,14 @@
       right: 231px;
       top: -52px;
 
+      @include breakpoint(max-width 1024px){
+        right: 130px;
+      }
+
+      @include breakpoint(max-width 768px){
+        right: 26px;
+      }
+
     }
   }
 
@@ -53,6 +61,14 @@
         background-repeat: no-repeat;
         top: 508px;
         left: 554px;
+
+        @include breakpoint(max-width 1024px){
+          left: 446px;
+        }
+
+        @include breakpoint(max-width 768px){
+          left: 336px;
+        }
       }
     }
 
@@ -70,6 +86,15 @@
         background-repeat: no-repeat;
         left: 560px;
         top: 42px;
+
+        @include breakpoint(max-width 1024px){
+          left: 478px;
+        }
+
+        @include breakpoint(max-width 768px){
+          left: 368px;
+        }
+
       }
     }
   }
@@ -125,6 +150,10 @@
           background-repeat: no-repeat;
           top: 41px;
           left: 127px;
+
+          @include breakpoint(max-width 480px){
+            left: 100px;
+          }
         }
     }
 

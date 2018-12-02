@@ -1,16 +1,21 @@
-.footer{
+.footer {
   position: relative;
   float: left;
   width: 100%;
   background-color: #5a4a65;
 
-  &__descr-box{
+  &__descr-box {
     position: relative;
     float: left;
     width: 30%;
+
+    @include breakpoint(max-width 480px){
+      width: 50%;
+    }
+
   }
 
-  &__logo{
+  &__logo {
     position: relative;
     float: left;
     width: 87px;
@@ -19,14 +24,14 @@
     padding-top: 10px;
     box-sizing: border-box;
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: contain;
     }
   }
 
-  &__adress{
+  &__adress {
     position: relative;
     float: left;
     width: 100%;
@@ -39,7 +44,7 @@
     box-sizing: border-box;
     margin-bottom: 10px;
 
-    &:before{
+    &:before {
       position: absolute;
       display: block;
       content: "";
@@ -52,7 +57,7 @@
     }
   }
 
-  &__number{
+  &__number {
     position: relative;
     float: left;
     width: 100%;
@@ -64,7 +69,7 @@
     box-sizing: border-box;
     margin-bottom: 10px;
 
-    &:before{
+    &:before {
       position: absolute;
       display: block;
       content: "";
@@ -77,7 +82,7 @@
     }
   }
 
-  &__email{
+  &__email {
     position: relative;
     float: left;
     width: 100%;
@@ -88,7 +93,7 @@
     padding-left: 30px;
     box-sizing: border-box;
 
-    &:before{
+    &:before {
       position: absolute;
       display: block;
       content: "";
@@ -101,13 +106,17 @@
     }
   }
 
-  &__menu-box{
+  &__menu-box {
     position: relative;
     float: left;
     width: 70%;
+
+    @include breakpoint(max-width 480px){
+      width: 50%;
+    }
   }
 
-  &__menu{
+  &__menu {
     position: relative;
     float: left;
     width: 100%;
@@ -118,12 +127,20 @@
     padding-left: 165px;
     box-sizing: border-box;
 
-    li{
+    @include breakpoint(max-width 1024px) {
+      padding-left: 0;
+    }
+
+    @include breakpoint(max-width 480px) {
+      display: none;
+    }
+
+    li {
       position: relative;
       float: left;
       margin-right: 25px;
 
-      a{
+      a {
         position: relative;
         float: left;
         width: 100%;
@@ -135,11 +152,11 @@
     }
   }
 
-  .active{
+  .active {
     position: relative;
     float: left;
 
-    &:after{
+    &:after {
       position: absolute;
       display: inline;
       content: "";
@@ -151,7 +168,7 @@
     }
   }
 
-  &__box{
+  &__box {
     position: relative;
     float: left;
     width: 36%;
@@ -159,7 +176,21 @@
     margin-top: 100px;
     margin-left: 510px;
 
-    &-elem{
+    @include breakpoint(max-width 1024px) {
+      margin-left: 375px;
+    }
+
+    @include breakpoint(max-width 768px) {
+      margin-left: 174px;
+      width: 53%;
+    }
+
+    @include breakpoint(max-width 480px) {
+      margin-top: 184px;
+      margin-left: 85px;
+    }
+
+    &-elem {
       position: relative;
       float: left;
       width: 25px;
@@ -167,7 +198,7 @@
       overflow: hidden;
       margin-right: 6px;
 
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -175,7 +206,7 @@
     }
   }
 
-  &__descr{
+  &__descr {
     position: relative;
     float: left;
     color: white;
@@ -183,9 +214,18 @@
     font-size: 16px;
     font-weight: 500;
     margin-right: 20px;
+
+    @include breakpoint(max-width 1024px) {
+      margin-right: 0;
+      width: 66%;
+    }
+
+    @include breakpoint(max-width 480px) {
+      display: none;
+    }
   }
 
-  &__copyright{
+  &__copyright {
     position: relative;
     float: left;
     width: 100%;

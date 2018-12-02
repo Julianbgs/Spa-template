@@ -13,6 +13,18 @@
     background-color: #ff96ae;
     left: 13%;
     top: 65%;
+
+    @include breakpoint(max-width 1024px){
+      width: 800px;
+    }
+
+    @include breakpoint(max-width 768px){
+      width: 600px;
+    }
+
+    @include breakpoint(max-width 480px){
+      display: none;
+    }
   }
 
   &__logo{
@@ -23,6 +35,10 @@
     overflow: hidden;
     padding-top: 10px;
     box-sizing: border-box;
+
+    @include breakpoint(max-width 480px){
+      width: 100%;
+    }
 
       img{
         width: 100%;
@@ -43,6 +59,19 @@
     padding-left: 80px;
     box-sizing: border-box;
 
+    @include breakpoint(max-width 1024px){
+      width: 21%;
+      padding-left: 20px;
+    }
+
+    @include breakpoint(max-width 768px){
+      width: 27%;
+    }
+
+    @include breakpoint(max-width 480px){
+      width: 50%;
+    }
+
       &:before{
         position: absolute;
         display: block;
@@ -53,6 +82,10 @@
         background-repeat: no-repeat;
         left: 60px;
         top: 40px;
+
+        @include breakpoint(max-width 1024px){
+          left: 2px;
+        }
       }
   }
 
@@ -68,6 +101,19 @@
     padding-left: 80px;
     box-sizing: border-box;
 
+    @include breakpoint(max-width 1024px){
+      padding-left: 20px;
+      width: 19%;
+    }
+
+    @include breakpoint(max-width 768px){
+      width: 23%;
+    }
+
+    @include breakpoint(max-width 480px){
+      width: 50%;
+    }
+
     &:before{
       position: absolute;
       display: block;
@@ -78,6 +124,10 @@
       background-repeat: no-repeat;
       left: 64px;
       top: 40px;
+
+      @include breakpoint(max-width 1024px){
+        left: 6px;
+      }
     }
   }
 
@@ -93,6 +143,15 @@
     padding-left: 75px;
     box-sizing: border-box;
 
+    @include breakpoint(max-width 1024px){
+      padding-left: 20px;
+    }
+
+    @include breakpoint(max-width 480px){
+      width: 100%;
+      text-align: center;
+    }
+
     &:before{
       position: absolute;
       display: block;
@@ -103,6 +162,15 @@
       background-repeat: no-repeat;
       left: 55px;
       top: 41px;
+
+      @include breakpoint(max-width 1024px){
+        left: -2px;
+      }
+
+      @include breakpoint(max-width 480px){
+        left: 161px;
+      }
+
     }
   }
 
@@ -114,7 +182,15 @@
     margin-top: 34px;
     margin-left: 95px;
 
+@include breakpoint(max-width 768px){
+  margin-left: 0;
+}
 
+    @include breakpoint(max-width 480px){
+      width: 100%;
+      justify-content: center;
+      margin-top: 0;
+    }
 
       &-elem{
         position: relative;
@@ -137,6 +213,10 @@
     float: left;
     width: 100%;
     margin-top: 45px;
+
+    @include breakpoint(max-width 480px){
+      display: none;
+    }
   }
 
   &__menu{

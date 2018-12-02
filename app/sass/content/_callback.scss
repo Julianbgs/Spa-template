@@ -20,6 +20,18 @@
       padding-left: 80px;
       padding-right: 80px;
       box-sizing: border-box;
+
+      @include breakpoint(max-width 1024px){
+        left: 258px;
+      }
+
+      @include breakpoint(max-width 768px){
+        left: 116px;
+      }
+
+      @include breakpoint(max-width 480px){
+        left: -38px;
+      }
     }
 
     &__title{

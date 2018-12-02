@@ -25,6 +25,18 @@
         background-repeat: no-repeat;
         top: -16px;
         left: 313px;
+
+        @include breakpoint(max-width 1024px){
+          left: 243px;
+        }
+
+        @include breakpoint(max-width 768px){
+          left: 140px;
+        }
+
+        @include breakpoint(max-width 480px){
+          left: 3px;
+        }
       }
     }
 
