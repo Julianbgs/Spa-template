@@ -5,4 +5,11 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true
     });
+
+    $(' .comand__slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true
+    });
 });

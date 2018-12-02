@@ -34,6 +34,42 @@
     float: left;
     width: 100%;
     margin-bottom: 185px;
+
+    .slick-prev{
+      position: relative;
+      float: left;
+
+      &:before{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 42px;
+        height: 42px;
+        background-image: url("../img/icons/arrow-prev.png");
+        background-repeat: no-repeat;
+        top: 285px;
+        left: 554px;
+      }
+    }
+
+    .slick-next{
+      position: relative;
+      float: left;
+
+
+
+      &:before{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 42px;
+        height: 42px;
+        background-image: url("../img/icons/arrow-next.png");
+        background-repeat: no-repeat;
+        left: 560px;
+        top: 60px;
+      }
+    }
   }
 
   &__slide{
@@ -58,38 +94,3 @@
   }
 }
 
-.slick-prev{
-position: relative;
-  float: left;
-
-  &:before{
-    position: absolute;
-    display: block;
-    content: "";
-    width: 42px;
-    height: 42px;
-    background-image: url("../img/icons/arrow-prev.png");
-    background-repeat: no-repeat;
-    top: 285px;
-    left: 554px;
-  }
-}
-
-.slick-next{
-  position: relative;
-  float: left;
-
-
-
-  &:before{
-    position: absolute;
-    display: block;
-    content: "";
-    width: 42px;
-    height: 42px;
-    background-image: url("../img/icons/arrow-next.png");
-    background-repeat: no-repeat;
-    left: 560px;
-    top: 60px;
-  }
-}
