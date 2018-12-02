@@ -1,0 +1,200 @@
+.footer{
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #5a4a65;
+
+  &__descr-box{
+    position: relative;
+    float: left;
+    width: 30%;
+  }
+
+  &__logo{
+    position: relative;
+    float: left;
+    width: 87px;
+    height: 86px;
+    overflow: hidden;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__adress{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: white;
+    font-family: $QanelasExtraBold;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+    &:before{
+      position: absolute;
+      display: block;
+      content: "";
+      width: 13px;
+      height: 12px;
+      background-image: url("../img/icons/arrow.png");
+      background-repeat: no-repeat;
+      left: 10px;
+      top: 26px;
+    }
+  }
+
+  &__number{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: white;
+    font-family: $QanelasExtraBold;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 30px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+    &:before{
+      position: absolute;
+      display: block;
+      content: "";
+      width: 13px;
+      height: 12px;
+      background-image: url("../img/icons/phone.png");
+      background-repeat: no-repeat;
+      left: 12px;
+      top: 5px;
+    }
+  }
+
+  &__email{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: white;
+    font-family: $QanelasExtraBold;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 30px;
+    box-sizing: border-box;
+
+    &:before{
+      position: absolute;
+      display: block;
+      content: "";
+      width: 15px;
+      height: 12px;
+      background-image: url("../img/icons/message.png");
+      background-repeat: no-repeat;
+      left: 7px;
+      top: 7px;
+    }
+  }
+
+  &__menu-box{
+    position: relative;
+    float: left;
+    width: 70%;
+  }
+
+  &__menu{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 35px;
+    padding-left: 165px;
+    box-sizing: border-box;
+
+    li{
+      position: relative;
+      float: left;
+      margin-right: 25px;
+
+      a{
+        position: relative;
+        float: left;
+        width: 100%;
+        color: white;
+        font-family: $QanelasBold;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .active{
+    position: relative;
+    float: left;
+
+    &:after{
+      position: absolute;
+      display: inline;
+      content: "";
+      width: 57px;
+      height: 4px;
+      background-color: white;
+      top: 30px;
+      left: 0;
+    }
+  }
+
+  &__box{
+    position: relative;
+    float: left;
+    width: 36%;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 510px;
+
+    &-elem{
+      position: relative;
+      float: left;
+      width: 25px;
+      height: 20px;
+      overflow: hidden;
+      margin-right: 6px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__descr{
+    position: relative;
+    float: left;
+    color: white;
+    font-family: $QanelasMedium;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+
+  &__copyright{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: $QanelasMedium;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+}

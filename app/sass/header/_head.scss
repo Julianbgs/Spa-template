@@ -163,20 +163,22 @@
           }
       }
   }
-}
 
-.active{
-  position: relative;
-  float: left;
+  .active{
+    position: relative;
+    float: left;
 
-  &:after{
-    position: absolute;
-    display: inline;
-    content: "";
-    width: 57px;
-    height: 4px;
-    background-color: white;
-    top: 30px;
-    left: 0;
+    &:after{
+      position: absolute;
+      display: inline;
+      content: "";
+      width: 57px;
+      height: 4px;
+      background-color: white;
+      top: 30px;
+      left: 0;
+    }
   }
 }
+
+
