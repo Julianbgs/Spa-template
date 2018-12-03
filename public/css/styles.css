@@ -513,6 +513,10 @@ textarea:active {
   border: none;
 }
 
+.button-elem:hover {
+  color: white;
+}
+
 .button-elem:after {
   position: absolute;
   display: block;

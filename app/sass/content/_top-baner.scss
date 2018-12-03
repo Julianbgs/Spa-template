@@ -67,6 +67,10 @@
   margin-top: 40px;
   border: none;
 
+  &:hover{
+    color: white;
+  }
+
   &:after{
     position: absolute;
     display: block;
