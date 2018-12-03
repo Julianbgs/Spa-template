@@ -30,7 +30,13 @@
       }
 
       @include breakpoint(max-width 480px){
-        left: -38px;
+       width: 100%;
+        left: 0;
+        height: 128%;
+      }
+
+      @include breakpoint(max-width 320px){
+        height: 140%;
       }
     }
 
@@ -97,6 +103,10 @@
       background-color: #666;
       top: 83px;
       left: -24px;
+
+      @include breakpoint(max-width 480px){
+        width: 262px;
+      }
     }
   }
 
@@ -133,6 +143,14 @@
       top: 134px;
       left: -414px;
       z-index: 1;
+
+      @include breakpoint(max-width 480px){
+        left: -239px;
+      }
+
+      @include breakpoint(max-width 320px){
+        left: -180px;
+      }
     }
 
     &:after {
@@ -144,6 +162,15 @@
       background-color: #666;
       left: -418px;
       top: 170px;
+
+      @include breakpoint(max-width 480px){
+        width: 262px;
+        left: -239px;
+      }
+
+      @include breakpoint(max-width 320px){
+        left: -185px;
+      }
     }
   }
 
@@ -172,6 +199,10 @@
       background-repeat: no-repeat;
       top: 24px;
       right: -70px;
+
+      @include breakpoint(max-width 480px){
+        right: 11px;
+      }
     }
   }
 }
@@ -209,6 +240,10 @@
   height: 13px;
   background-image: url("../img/icons/form.png");
   background-repeat: no-repeat;
+
+  @include breakpoint(max-width 480px){
+    left: 0;
+  }
 }
 
 .checkbox input:checked + .checkbox__text:before {
@@ -219,6 +254,14 @@ background-color: #5a4a65;
 input[type = submit]{
   top: -36px;
   left: 92px;
+
+  @include breakpoint(max-width 480px){
+    left: 5px;
+  }
+
+  @include breakpoint(max-width 320px){
+    left: -31px;
+  }
 }
 
 

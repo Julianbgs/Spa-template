@@ -6,6 +6,12 @@
   background-image: url("../img/final-baner.png");
   background-repeat: no-repeat;
 
+  @include breakpoint(max-width 480px){
+    height: 632px;
+    background-image: url("../img/baner-mobile.png");
+    background-repeat: no-repeat;
+  }
+
   &__title{
     position: relative;
     float: left;
@@ -18,7 +24,10 @@
     margin-bottom: 0;
 
     @include breakpoint(max-width 480px){
-      margin-top: 400px;
+      margin-top: 363px;
+      font-size: 42px;
+      margin-left: 20px;
+      width: 90%;
     }
   }
 
@@ -31,6 +40,12 @@
     font-size: 85px;
     font-weight: 900;
     margin-top: 0;
+
+    @include breakpoint(max-width 480px){
+      font-size: 42px;
+      margin-left: 20px;
+      width: 90%;
+    }
   }
 
   &__description{
@@ -66,6 +81,12 @@
   box-sizing: border-box;
   margin-top: 40px;
   border: none;
+
+  @include breakpoint(max-width 480px){
+    padding-left: 30px;
+    padding-right: 55px;
+    margin-left: 20px;
+  }
 
   &:hover{
     color: white;

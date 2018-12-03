@@ -42,7 +42,8 @@
     left: -97px;
 
     @include breakpoint(max-width 480px){
-      left: 48px;
+      left: 11px;
+      font-size: 63px;
     }
 
     &:after {
@@ -55,6 +56,14 @@
       background-repeat: no-repeat;
       top: -35px;
       left: 225px;
+
+      @include breakpoint(max-width 480px){
+        left: 190px;
+      }
+
+      @include breakpoint(max-width 320px){
+        display: none;
+      }
     }
   }
 
@@ -174,6 +183,10 @@
       background-repeat: no-repeat;
       top: 10px;
       left: 200px;
+
+      @include breakpoint(max-width 480px){
+        left: 79px;
+      }
     }
   }
 }

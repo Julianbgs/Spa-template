@@ -50,7 +50,7 @@
   &__adress{
     position: relative;
     float: left;
-    width: 23%;
+    width: 39%;
     color: white;
     font-family: $QanelasExtraBold;
     font-size: 16px;
@@ -69,7 +69,12 @@
     }
 
     @include breakpoint(max-width 480px){
-      width: 50%;
+      width: 60%;
+      padding-left: 45px;
+    }
+
+    @include breakpoint(max-width 375px){
+      padding-left: 19px;
     }
 
       &:before{
@@ -86,13 +91,21 @@
         @include breakpoint(max-width 1024px){
           left: 2px;
         }
+
+        @include breakpoint(max-width 480px){
+          left: 22px;
+        }
+
+        @include breakpoint(max-width 375px){
+          left: 2px;
+        }
       }
   }
 
   &__number{
     position: relative;
     float: left;
-    width: 23%;
+    width: 34%;
     color: white;
     font-family: $QanelasExtraBold;
     font-size: 16px;
@@ -111,7 +124,12 @@
     }
 
     @include breakpoint(max-width 480px){
-      width: 50%;
+      width: 100%;
+      order: 1;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 30px;
+      font-size: 26px;
     }
 
     &:before{
@@ -127,6 +145,22 @@
 
       @include breakpoint(max-width 1024px){
         left: 6px;
+      }
+
+      @include breakpoint(max-width 480px){
+        background-image: url("../img/icons/new-phone.png");
+        width: 14px;
+        height: 24px;
+        left: 100px;
+        top: 21px;
+      }
+
+      @include breakpoint(max-width 375px){
+        left: 46px;
+      }
+
+      @include breakpoint(max-width 320px){
+        left: 19px;
       }
     }
   }
@@ -148,8 +182,8 @@
     }
 
     @include breakpoint(max-width 480px){
-      width: 100%;
-      text-align: center;
+      width: 40%;
+      font-size: 15px;
     }
 
     &:before{
@@ -168,7 +202,7 @@
       }
 
       @include breakpoint(max-width 480px){
-        left: 161px;
+        left: -2px;
       }
 
     }
@@ -206,6 +240,13 @@
             object-fit: contain;
           }
       }
+  }
+
+  &__flex{
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__navigation{
