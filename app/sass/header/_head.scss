@@ -4,6 +4,20 @@
   width: 100%;
   z-index: 1;
 
+  &--mod{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 173px;
+    background-image: url("../img/header-bg.png");
+
+    @include breakpoint(max-width 480px){
+      height: 100%;
+      padding-bottom: 20px;
+    }
+
+  }
+
   &:after{
     position: absolute;
     display: inline;
@@ -60,7 +74,7 @@
     box-sizing: border-box;
 
     @include breakpoint(max-width 1024px){
-      width: 21%;
+      width: 43%;
       padding-left: 20px;
     }
 
@@ -116,7 +130,7 @@
 
     @include breakpoint(max-width 1024px){
       padding-left: 20px;
-      width: 19%;
+      width: 34%;
     }
 
     @include breakpoint(max-width 768px){

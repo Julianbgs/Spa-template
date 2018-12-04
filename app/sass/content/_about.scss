@@ -12,6 +12,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    &--mod{
+      height: 689px;
+      background-image: url("../img/page-about-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
     @include breakpoint(max-width 480px){
       display: none;
     }
@@ -25,6 +33,12 @@
     background-image: url("../img/about-pink-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    &--mod{
+      height: 689px;
+      background-color: white;
+      background-image: none;
+    }
 
     @include breakpoint(max-width 480px){
       width: 100%;
@@ -40,6 +54,42 @@
     font-weight: 800;
     top: 45px;
     left: -97px;
+
+    &--mod{
+      position: relative;
+      float: left;
+      width: 100%;
+      font-family: $QanelasHeavy;
+      font-size: 75px;
+      font-weight: 800;
+      text-align: center;
+      color: #5a4a65;
+      top: 0;
+      left: 0;
+      margin-top: 70px;
+      margin-bottom: 90px;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 155px;
+        height: 119px;
+        background-image: url("../img/page-about-obj.png");
+        background-repeat: no-repeat;
+        top: -35px;
+        right: 32%;
+
+        @include breakpoint(max-width 480px){
+          left: 190px;
+        }
+
+        @include breakpoint(max-width 320px){
+          display: none;
+        }
+      }
+
+    }
 
     @include breakpoint(max-width 480px){
       left: 11px;
@@ -77,6 +127,11 @@
     font-weight: 800;
     margin-bottom: 0;
 
+    &--mod{
+      color: #5a4a65;
+      margin-top: 0;
+    }
+
     @include breakpoint(max-width 1024px){
       margin-left: 20px;
     }
@@ -92,6 +147,11 @@
     margin-top: 0;
     margin-bottom: 30px;
 
+    &--mod{
+      color: #5a4a65;
+      margin-top: 15px;
+    }
+
     @include breakpoint(max-width 1024px){
       margin-left: 20px;
     }
@@ -106,6 +166,10 @@
     font-weight: 400;
     margin-left: 80px;
     margin-bottom: 30px;
+
+    &--mod{
+      color: #5a4a65;
+    }
 
     @include breakpoint(max-width 1024px){
       margin-left: 20px;
@@ -126,6 +190,10 @@
     font-weight: 400;
     margin-left: 80px;
     margin-bottom: 50px;
+
+    &--mod{
+      color: #5a4a65;
+    }
 
     @include breakpoint(max-width 1024px){
       margin-left: 20px;

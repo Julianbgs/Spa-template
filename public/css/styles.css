@@ -131,6 +131,21 @@ textarea:active {
   z-index: 1;
 }
 
+.header--mod {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 173px;
+  background-image: url("../img/header-bg.png");
+}
+
+@media (max-width: 480px) {
+  .header--mod {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+}
+
 .header:after {
   position: absolute;
   display: inline;
@@ -200,7 +215,7 @@ textarea:active {
 
 @media (max-width: 1024px) {
   .header__adress {
-    width: 21%;
+    width: 43%;
     padding-left: 20px;
   }
 }
@@ -271,7 +286,7 @@ textarea:active {
 @media (max-width: 1024px) {
   .header__number {
     padding-left: 20px;
-    width: 19%;
+    width: 34%;
   }
 }
 
@@ -821,6 +836,13 @@ textarea:active {
   background-size: cover;
 }
 
+.about__img-bg--mod {
+  height: 689px;
+  background-image: url("../img/page-about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 480px) {
   .about__img-bg {
     display: none;
@@ -837,6 +859,12 @@ textarea:active {
   background-size: cover;
 }
 
+.about__box--mod {
+  height: 689px;
+  background-color: white;
+  background-image: none;
+}
+
 @media (max-width: 480px) {
   .about__box {
     width: 100%;
@@ -851,6 +879,45 @@ textarea:active {
   font-weight: 800;
   top: 45px;
   left: -97px;
+}
+
+.about__title--mod {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "QanelasHeavy";
+  font-size: 75px;
+  font-weight: 800;
+  text-align: center;
+  color: #5a4a65;
+  top: 0;
+  left: 0;
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+
+.about__title--mod:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 155px;
+  height: 119px;
+  background-image: url("../img/page-about-obj.png");
+  background-repeat: no-repeat;
+  top: -35px;
+  right: 32%;
+}
+
+@media (max-width: 480px) {
+  .about__title--mod:after {
+    left: 190px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about__title--mod:after {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -895,6 +962,11 @@ textarea:active {
   margin-bottom: 0;
 }
 
+.about__beauty--mod {
+  color: #5a4a65;
+  margin-top: 0;
+}
+
 @media (max-width: 1024px) {
   .about__beauty {
     margin-left: 20px;
@@ -912,6 +984,11 @@ textarea:active {
   margin-bottom: 30px;
 }
 
+.about__sub-title--mod {
+  color: #5a4a65;
+  margin-top: 15px;
+}
+
 @media (max-width: 1024px) {
   .about__sub-title {
     margin-left: 20px;
@@ -927,6 +1004,10 @@ textarea:active {
   font-weight: 400;
   margin-left: 80px;
   margin-bottom: 30px;
+}
+
+.about__descr--mod {
+  color: #5a4a65;
 }
 
 @media (max-width: 1024px) {
@@ -952,6 +1033,10 @@ textarea:active {
   font-weight: 400;
   margin-left: 80px;
   margin-bottom: 50px;
+}
+
+.about__sub-descr--mod {
+  color: #5a4a65;
 }
 
 @media (max-width: 1024px) {
@@ -1039,6 +1124,19 @@ textarea:active {
   background-size: cover;
 }
 
+.callback--mod {
+  height: 655px;
+  background-image: url("../img/callback-mod.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 480px) {
+  .callback--mod {
+    height: 100%;
+  }
+}
+
 .callback__form {
   position: relative;
   float: left;
@@ -1073,6 +1171,7 @@ textarea:active {
     width: 100%;
     left: 0;
     height: 128%;
+    top: 0;
   }
 }
 
