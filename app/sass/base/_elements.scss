@@ -1,0 +1,44 @@
+.pagination{
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 100px;
+
+  .active{
+    position: relative;
+    float: left;
+    color: white;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/elips.png");
+    background-repeat: no-repeat;
+    padding-left: 9px;
+  }
+
+    &-body{
+      position: relative;
+      float: left;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+        li{
+          position: relative;
+          float: left;
+          margin-right: 20px;
+
+            a{
+              position: relative;
+              float: left;
+              width: 100%;
+              font-family: $QanelasMedium;
+              font-size: 20px;
+              font-weight: 500;
+              color: #5a4a65;
+            }
+        }
+    }
+}
