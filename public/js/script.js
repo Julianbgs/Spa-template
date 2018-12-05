@@ -95,4 +95,20 @@ $(document).ready(function () {
             }
         ]
     });
+
+    // tabs
+    $('.price__tabs-wrapper--box').each(function (i) {
+        if (i != 0) {
+            $(this).hide(0)
+        }
+    });
+    $(document).on('click', '.price__tabs a', function (event) {
+        event.preventDefault();
+        var tabId = $(this).attr('href');
+        $('.price__tabs a').removeClass('active');
+        $(this).addClass('active');
+        $('.price__tabs-wrapper--box').hide(0);
+        $(tabId).fadeIn();
+    });
+
 });

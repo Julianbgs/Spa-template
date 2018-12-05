@@ -1,0 +1,181 @@
+.price{
+  position: relative;
+  float: left;
+  width: 100%;
+
+  &__title{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #5a4a65;
+    font-family: $QanelasHeavy;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 800;
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+
+  &__tabs{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    @include breakpoint(max-width 480px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+      .active{
+        color: #fd6a8b;
+      }
+
+      li{
+        position: relative;
+        float: left;
+        margin-right: 27px;
+
+          a{
+            position: relative;
+            float: left;
+            width: 100%;
+            font-family: $QanelasBold;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 36px;
+            color: #5a4a65;
+          }
+      }
+
+    &-wrapper{
+      position: relative;
+      float: left;
+      width: 100%;
+
+        &--box{
+          position: relative;
+          float: left;
+          width: 100%;
+        }
+    }
+  }
+
+
+
+  &__box{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    background-color: #a39fa6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+
+  }
+
+  &__tablice{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 400px;
+
+    @include breakpoint(max-width 1024px){
+      margin-bottom: 50px;
+    }
+
+    th{
+      color: #5a4a65;
+      font-family: $QanelasBold;
+      font-size: 15px;
+      font-weight: 600;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    td{
+      color: #5a4a65;
+      font-family: $QanelasBold;
+      font-size: 15px;
+      font-weight: 600;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    tr{
+      &:nth-of-type(odd){
+        background-color: #f6f6f6;
+      }
+    }
+
+      &-title{
+        position: relative;
+        float: left;
+        width: 100%;
+        text-align: center;
+        background-color: #5a4a65;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        font-family: $QanelasBold;
+      }
+
+    &-name{
+      position: relative;
+      float: left;
+      width: 50%;
+      color: white;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-left: 30px;
+      font-family: $QanelasBold;
+    }
+
+    &-price{
+      position: relative;
+      float: left;
+      width: 50%;
+      color: white;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: right;
+      padding-right: 100px;
+      font-family: $QanelasBold;
+
+      @include breakpoint(max-width 480px){
+        padding-right: 20px;
+      }
+    }
+
+    td.price__tablice-item{
+      position: relative;
+      float: left;
+      color: #5a4a65;
+      font-family: $QanelasRegular;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: right;
+      padding-left: 15px;
+
+    }
+  }
+}

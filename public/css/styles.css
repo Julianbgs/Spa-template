@@ -1962,6 +1962,200 @@ input[type=submit] {
   line-height: 28px;
 }
 
+.price {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.price__title {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #5a4a65;
+  font-family: "QanelasHeavy";
+  text-align: center;
+  font-size: 75px;
+  font-weight: 800;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.price__tabs {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 480px) {
+  .price__tabs {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.price__tabs .active {
+  color: #fd6a8b;
+}
+
+.price__tabs li {
+  position: relative;
+  float: left;
+  margin-right: 27px;
+}
+
+.price__tabs li a {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "QanelasBold";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #5a4a65;
+}
+
+.price__tabs-wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.price__tabs-wrapper--box {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.price__box {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #a39fa6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.price__tablice {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 400px;
+}
+
+@media (max-width: 1024px) {
+  .price__tablice {
+    margin-bottom: 50px;
+  }
+}
+
+.price__tablice th {
+  color: #5a4a65;
+  font-family: "QanelasBold";
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.price__tablice td {
+  color: #5a4a65;
+  font-family: "QanelasBold";
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.price__tablice tr:nth-of-type(odd) {
+  background-color: #f6f6f6;
+}
+
+.price__tablice-title {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  background-color: #5a4a65;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  font-family: "QanelasBold";
+}
+
+.price__tablice-name {
+  position: relative;
+  float: left;
+  width: 50%;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 30px;
+  font-family: "QanelasBold";
+}
+
+.price__tablice-price {
+  position: relative;
+  float: left;
+  width: 50%;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: right;
+  padding-right: 100px;
+  font-family: "QanelasBold";
+}
+
+@media (max-width: 480px) {
+  .price__tablice-price {
+    padding-right: 20px;
+  }
+}
+
+.price__tablice td.price__tablice-item {
+  position: relative;
+  float: left;
+  color: #5a4a65;
+  font-family: "QanelasRegular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  padding-left: 15px;
+}
+
 .footer {
   position: relative;
   float: left;

@@ -5,7 +5,64 @@ html
 
     body
         include ../mixins/mixins
-        include ../elements/header-mod
+        header.header.header--mod
+            .container
+                .header__logo
+                    img(src="img/logo.png")
+
+                .header__flex
+
+                    p.header__adress
+                        | Москва, ул. Сумская д.6
+
+                    span.header__number
+                        | +7 (496) 566-46-43
+
+                    p.header__email
+                        | info@skinspa.ru
+
+                .header__box
+                    .header__box-elem
+                        img(src="img/icons/vk.png")
+
+                    .header__box-elem
+                        img(src="img/icons/fb.png")
+
+                    .header__box-elem
+                        img(src="img/icons/twit.png")
+
+                    .header__box-elem
+                        img(src="img/icons/insta.png")
+
+                    .header__box-elem
+                        img(src="img/icons/tube.png")
+
+                nav.header__navigation
+                    ul.header__menu
+                        li
+                            a(href="#") Главная
+
+                        li
+                            a(href="#").active О нас
+
+                        li
+                            a(href="#") Услуги
+
+                        li
+                            a(href="#") Цены
+
+                        li
+                            a(href="#") Галерея
+
+                        li
+                            a(href="#") Мастера
+
+                        li
+                            a(href="#") Отзывы
+
+                        li
+                            a(href="#") Контакты
+
         include ../elements/page-about
         include ../elements/callback-mod
         include ../elements/footer
