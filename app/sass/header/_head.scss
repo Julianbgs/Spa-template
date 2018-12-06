@@ -12,8 +12,11 @@
     background-image: url("../img/header-bg.png");
 
     @include breakpoint(max-width 480px){
-      height: 100%;
-      padding-bottom: 20px;
+      position: absolute;
+      float: left;
+      width: 100%;
+      z-index: 1;
+      background-image: none;
     }
 
   }

@@ -190,8 +190,11 @@ textarea:active {
 
 @media (max-width: 480px) {
   .header--mod {
-    height: 100%;
-    padding-bottom: 20px;
+    position: absolute;
+    float: left;
+    width: 100%;
+    z-index: 1;
+    background-image: none;
   }
 }
 
@@ -565,9 +568,14 @@ textarea:active {
   background-repeat: no-repeat;
 }
 
+.baner--mod {
+  display: none;
+}
+
 @media (max-width: 480px) {
   .baner {
     height: 632px;
+    display: block;
     background-image: url("../img/baner-mobile.png");
     background-repeat: no-repeat;
   }
@@ -1482,6 +1490,20 @@ input[type=submit] {
   background-image: url("../img/bg-gallery.png");
 }
 
+.gallery--mod {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 100px;
+  background-image: none;
+}
+
+@media (max-width: 480px) {
+  .gallery--mod {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .gallery {
     margin-top: 200px;
@@ -1626,6 +1648,31 @@ input[type=submit] {
   width: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.gallery__wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.gallery__elem {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .gallery__elem {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery__elem {
+    width: 100%;
+  }
 }
 
 .comand {

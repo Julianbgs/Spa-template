@@ -6,8 +6,13 @@
   background-image: url("../img/final-baner.png");
   background-repeat: no-repeat;
 
+  &--mod{
+    display: none;
+  }
+
   @include breakpoint(max-width 480px){
     height: 632px;
+    display: block;
     background-image: url("../img/baner-mobile.png");
     background-repeat: no-repeat;
   }
