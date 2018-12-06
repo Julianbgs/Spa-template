@@ -111,4 +111,47 @@ $(document).ready(function () {
         $(tabId).fadeIn();
     });
 
+
+    //page-gallery slider
+    window.onload = function () {
+        var width = document.documentElement.clientWidth;
+        var news_slider = $('.gallery__wrapper');
+
+
+        if (width < 1024) {
+
+
+            news_slider.addClass('news__wrapper--slider');
+            $('.news__wrapper--slider').not('.slick-initialized').slick({
+
+            });
+
+
+        } else {
+
+            news_slider.removeClass('news__wrapper--slider').not('.slick-initialized');
+
+        }
+
+
+    };
+    window.addEventListener('resize', function () {
+        var width = document.documentElement.clientWidth;
+        var news_slider = $('.gallery__wrapper');
+
+        if (width < 1024) {
+
+            news_slider.addClass('news__wrapper--slider');
+            $('.news__wrapper--slider').not('.slick-initialized').slick({
+
+            });
+
+
+        } else {
+
+            news_slider.removeClass('news__wrapper--slider').not('.slick-initialized');
+
+        }
+    });
+
 });
