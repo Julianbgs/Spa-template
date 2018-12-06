@@ -2309,6 +2309,155 @@ input[type=submit] {
   padding-left: 15px;
 }
 
+.contact {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.contact__wrap {
+  position: relative;
+  float: left;
+  width: 40%;
+}
+
+.contact__adress {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #5a4a65;
+  font-family: "QanelasBold";
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.contact__adress:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 19px;
+  background-image: url("../img/icons/contact-arrow.png");
+  background-repeat: no-repeat;
+  left: -26px;
+  top: 8px;
+}
+
+.contact__number {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #5a4a65;
+  font-family: "QanelasBold";
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.contact__number:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 11px;
+  height: 17px;
+  background-image: url("../img/icons/contact-phone.png");
+  background-repeat: no-repeat;
+  left: -26px;
+  top: 8px;
+}
+
+.contact__email {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #5a4a65;
+  font-family: "QanelasBold";
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+
+.contact__email:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 19px;
+  height: 15px;
+  background-image: url("../img/icons/contact-message.png");
+  background-repeat: no-repeat;
+  left: -26px;
+  top: 8px;
+}
+
+.contact__social {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #5a4a65;
+  font-family: "QanelasBold";
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.contact__box {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 200px;
+}
+
+@media (max-width: 480px) {
+  .contact__box {
+    margin-bottom: 40px;
+  }
+}
+
+.contact__box-elem {
+  position: relative;
+  float: left;
+  margin-right: 13px;
+}
+
+.contact__map {
+  position: relative;
+  float: left;
+  width: 60%;
+}
+
+@media (max-width: 480px) {
+  .contact__map {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.contact__map iframe {
+  position: relative;
+  float: left;
+  border: none;
+  width: 653px;
+  height: 307px;
+}
+
+@media (max-width: 1024px) {
+  .contact__map iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__map iframe {
+    width: 100%;
+  }
+}
+
 .footer {
   position: relative;
   float: left;
