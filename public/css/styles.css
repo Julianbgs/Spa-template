@@ -157,6 +157,12 @@ textarea:active {
   padding: 0;
 }
 
+.pagination-body--mod {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .pagination-body li {
   position: relative;
   float: left;
@@ -2094,6 +2100,19 @@ input[type=submit] {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+}
+
+.review__wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.review__element {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 80px;
 }
 
 .price {
