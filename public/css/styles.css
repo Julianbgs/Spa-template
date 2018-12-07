@@ -1524,6 +1524,12 @@ textarea:active {
   }
 }
 
+@media (max-width: 400px) {
+  .callback__elem-phone:before {
+    left: -239px;
+  }
+}
+
 @media (max-width: 320px) {
   .callback__elem-phone:before {
     left: -180px;
@@ -1551,6 +1557,12 @@ textarea:active {
 @media (max-width: 415px) {
   .callback__elem-phone:after {
     left: -275px;
+  }
+}
+
+@media (max-width: 400px) {
+  .callback__elem-phone:after {
+    left: -239px;
   }
 }
 
