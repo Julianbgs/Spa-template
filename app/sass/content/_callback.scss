@@ -161,6 +161,10 @@
         left: -239px;
       }
 
+      @include breakpoint(max-width 415px){
+        left: -280px;
+      }
+
       @include breakpoint(max-width 320px){
         left: -180px;
       }
@@ -179,6 +183,10 @@
       @include breakpoint(max-width 480px){
         width: 262px;
         left: -239px;
+      }
+
+      @include breakpoint(max-width 415px){
+        left: -275px;
       }
 
       @include breakpoint(max-width 320px){
