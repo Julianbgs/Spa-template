@@ -38,6 +38,7 @@
 
       @include breakpoint(max-width 480px){
         font-size: 65px;
+        margin-bottom: 20px;
       }
 
         &:before{
@@ -63,6 +64,10 @@
     width: 100%;
     margin-bottom: 185px;
 
+    @include breakpoint(max-width 480px){
+      margin-bottom: 90px;
+    }
+
     .slick-prev{
       position: relative;
       float: left;
@@ -87,7 +92,7 @@
         }
 
         @include breakpoint(max-width 480px){
-          left: 193px;
+          left: 143px;
         }
       }
     }
@@ -114,7 +119,7 @@
         }
 
         @include breakpoint(max-width 480px){
-          left: 233px;
+          left: 190px;
         }
       }
     }

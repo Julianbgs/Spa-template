@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include breakpoint(max-width 480px){
+    height: 100%;
+    padding-bottom: 20px;
+  }
+
   &--mod{
     height: 100%;
     background-image: none;

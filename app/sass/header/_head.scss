@@ -39,6 +39,10 @@
       width: 600px;
     }
 
+    @include breakpoint(max-width 720px){
+     display: none;
+    }
+
     @include breakpoint(max-width 480px){
       display: none;
     }
@@ -200,7 +204,7 @@
 
     @include breakpoint(max-width 480px){
       width: 40%;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     &:before{
@@ -272,9 +276,7 @@
     width: 100%;
     margin-top: 45px;
 
-    @include breakpoint(max-width 480px){
-      display: none;
-    }
+
   }
 
   &__menu{
@@ -285,10 +287,24 @@
     padding: 0;
     list-style: none;
 
+    @include breakpoint(max-width 480px){
+      display: none;
+      width: 150px;
+      background-color: white;
+      top: -200px;
+      border-radius: 10px;
+
+    }
+
       li{
         position: relative;
         float: left;
         margin-right: 25px;
+
+        @include breakpoint(max-width 480px){
+          width: 100%;
+          text-align: center;
+        }
 
           a{
             position: relative;
@@ -298,6 +314,10 @@
             font-family: $QanelasBold;
             font-size: 16px;
             font-weight: 700;
+
+            @include breakpoint(max-width 480px){
+              color: #000;
+            }
           }
       }
   }
@@ -317,6 +337,70 @@
       left: 0;
     }
   }
+
+  &__trigger {
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .4);
+    z-index: 15;
+    cursor: pointer;
+
+    @include breakpoint(max-width 480px) {
+      display: block;
+    }
+
+    span {
+      display: block;
+      height: 2px;
+      width: 18px;
+      background-color: #000;
+      position: absolute;
+      left: 50%;
+      margin-left: -9px;
+      top: 50%;
+      margin-top: -1px;
+    }
+
+    span:first-of-type {
+      transition: all 0.2s;
+      margin-top: -6px;
+      content: '';
+    }
+    span:last-of-type {
+      transition: all 0.2s;
+      margin-top: 4px;
+      content: '';
+    }
+  }
+
+  &__trigger.js-trigger-active {
+    background-image: linear-gradient(to top, #fe4e3a 0%, #f6373d 50%, #ff5c34 100%);
+
+    span:nth-of-type(2) {
+      display: none;
+    }
+
+    span {
+      background-color: #fff;
+
+      &:first-of-type {
+        transform: rotate(135deg);
+        margin-top: 0;
+      }
+
+      &:last-of-type {
+        transform: rotate(-134deg);
+        margin-top: 0;
+      }
+    }
+  }
+
 }
 
 

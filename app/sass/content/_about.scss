@@ -225,6 +225,12 @@
       margin-left: 138px;
     }
 
+    @include breakpoint(max-width 480px){
+      width: 60%;
+      margin-left: 110px;
+      margin-top: -51px;
+    }
+
     &:before{
       position: absolute;
       display: inline;
@@ -238,6 +244,10 @@
       @include breakpoint(max-width 768px){
         width: 112px;
         left: -64%;
+      }
+
+      @include breakpoint(max-width 480px){
+        display: none;
       }
     }
 
@@ -254,6 +264,10 @@
 
       @include breakpoint(max-width 480px){
         left: 79px;
+      }
+
+      @include breakpoint(max-width 480px){
+        display: none;
       }
     }
   }

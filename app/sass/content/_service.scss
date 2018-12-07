@@ -14,6 +14,11 @@
       font-weight: 800;
       margin-top: 100px;
 
+      @include breakpoint(max-width 480px){
+        margin-top: 45px;
+        font-size: 43px;
+      }
+
         &-bg{
           position: absolute;
           width: 181px;
@@ -30,6 +35,11 @@
           @include breakpoint(max-width 768px){
             right: 5%;
           }
+
+
+          @include breakpoint(max-width 480px){
+            display: none;
+          }
         }
     }
 
@@ -41,6 +51,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 100px;
+
+    @include breakpoint(max-width 480px){
+      margin-top: 45px;
+    }
   }
 
   &__elem{
@@ -91,7 +105,11 @@
         border-radius: 10px 10px 0 0;
 
         @include breakpoint(max-width 1024px){
-          width: 100%;
+            width: 100%;
+          }
+
+        @include breakpoint(max-width 480px){
+          height: 125px;
         }
 
           img{
@@ -125,6 +143,8 @@
 
       @include breakpoint(max-width 480px){
         font-size: 17px;
+        height: 50px;
+        margin-top: 10px;
       }
 
       @include breakpoint(max-width 320px){
@@ -142,6 +162,10 @@
       font-size: 16px;
       font-weight: 400;
       margin-top: 20px;
+
+      @include breakpoint(max-width 480px){
+        display: none;
+      }
     }
   }
 
@@ -152,5 +176,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+
+    @include breakpoint(max-width 480px){
+      margin-bottom: 20px;
+    }
   }
 }
