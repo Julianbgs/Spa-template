@@ -90,12 +90,12 @@
     }
 
     @include breakpoint(max-width 480px){
-      width: 60%;
-      padding-left: 45px;
+      width: 100%;
+      text-align: center;
     }
 
     @include breakpoint(max-width 375px){
-      padding-left: 19px;
+
     }
 
       &:before{
@@ -114,11 +114,11 @@
         }
 
         @include breakpoint(max-width 480px){
-          left: 22px;
+          left: 70px;
         }
 
         @include breakpoint(max-width 375px){
-          left: 2px;
+          left: 70px;
         }
       }
   }
@@ -203,7 +203,9 @@
     }
 
     @include breakpoint(max-width 480px){
-      width: 40%;
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
       font-size: 14px;
     }
 
@@ -223,7 +225,12 @@
       }
 
       @include breakpoint(max-width 480px){
-        left: -2px;
+        left: 110px;
+        top: 15px;
+      }
+
+      @include breakpoint(max-width 320px){
+        left: 85px;
       }
 
     }

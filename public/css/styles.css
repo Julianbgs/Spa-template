@@ -292,14 +292,8 @@ textarea:active {
 
 @media (max-width: 480px) {
   .header__adress {
-    width: 60%;
-    padding-left: 45px;
-  }
-}
-
-@media (max-width: 375px) {
-  .header__adress {
-    padding-left: 19px;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -323,13 +317,13 @@ textarea:active {
 
 @media (max-width: 480px) {
   .header__adress:before {
-    left: 22px;
+    left: 70px;
   }
 }
 
 @media (max-width: 375px) {
   .header__adress:before {
-    left: 2px;
+    left: 70px;
   }
 }
 
@@ -435,7 +429,9 @@ textarea:active {
 
 @media (max-width: 480px) {
   .header__email {
-    width: 40%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
     font-size: 14px;
   }
 }
@@ -460,7 +456,14 @@ textarea:active {
 
 @media (max-width: 480px) {
   .header__email:before {
-    left: -2px;
+    left: 110px;
+    top: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__email:before {
+    left: 85px;
   }
 }
 
