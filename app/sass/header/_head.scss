@@ -120,6 +120,10 @@
         @include breakpoint(max-width 375px){
           left: 70px;
         }
+
+        @include breakpoint(max-width 320px){
+          left: 45px;
+        }
       }
   }
 

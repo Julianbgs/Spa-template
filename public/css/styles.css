@@ -179,6 +179,57 @@ textarea:active {
   color: #5a4a65;
 }
 
+.loaderArea {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #ff708e), color-stop(90%, #fd7c7d));
+  background: -webkit-linear-gradient(left, #ff708e 10%, #fd7c7d 90%);
+  background: -o-linear-gradient(left, #ff708e 10%, #fd7c7d 90%);
+  background: linear-gradient(90deg, #ff708e 10%, #fd7c7d 90%);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100000;
+}
+
+.loader {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 45%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+@media (max-width: 480px) {
+  .loader {
+    left: 20%;
+  }
+}
+
+.loader:before {
+  content: "";
+  height: 24px;
+  width: 269px;
+  background-image: url("../img/preloader.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+}
+
+.loader:after {
+  content: "";
+  height: 86px;
+  width: 87px;
+  position: absolute;
+  top: -120px;
+  left: 100px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+}
+
 .header {
   position: absolute;
   float: left;
@@ -324,6 +375,12 @@ textarea:active {
 @media (max-width: 375px) {
   .header__adress:before {
     left: 70px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__adress:before {
+    left: 45px;
   }
 }
 
@@ -770,6 +827,11 @@ textarea:active {
   box-sizing: border-box;
   margin-top: 40px;
   border: none;
+}
+
+.button-elem--mod {
+  margin-top: -25px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 480px) {

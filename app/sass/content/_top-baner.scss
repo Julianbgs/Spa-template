@@ -87,6 +87,11 @@
   margin-top: 40px;
   border: none;
 
+  &--mod{
+    margin-top: -25px;
+    margin-bottom: 10px;
+  }
+
   @include breakpoint(max-width 480px){
     padding-left: 30px;
     padding-right: 55px;
