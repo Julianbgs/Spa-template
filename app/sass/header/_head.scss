@@ -313,9 +313,9 @@
 
     @include breakpoint(max-width 480px){
       display: none;
-      width: 150px;
+      width: 100%;
       background-color: white;
-      top: -200px;
+      top: -240px;
       border-radius: 10px;
 
     }
@@ -328,6 +328,8 @@
         @include breakpoint(max-width 480px){
           width: 100%;
           text-align: center;
+          margin-top: 8px;
+          margin-bottom: 8px;
         }
 
           a{

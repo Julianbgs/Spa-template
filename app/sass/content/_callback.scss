@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include breakpoint(max-width 480px){
+    background-image: none;
+  }
+
   &--mod{
     height: 655px;
     background-image: url("../img/callback-mod.png");
@@ -15,7 +19,9 @@
 
     @include breakpoint(max-width 480px){
       height: 100%;
+      background-image: none;
     }
+
 
   }
 
@@ -186,7 +192,7 @@
       height: 1px;
       background-color: #666;
       left: -418px;
-      top: 170px;
+      top: 180px;
 
       @include breakpoint(max-width 480px){
         width: 262px;
@@ -253,7 +259,7 @@
   position: relative;
   float: left;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .checkbox input {

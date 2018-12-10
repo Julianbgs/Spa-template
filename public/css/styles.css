@@ -609,9 +609,9 @@ textarea:active {
 @media (max-width: 480px) {
   .header__menu {
     display: none;
-    width: 150px;
+    width: 100%;
     background-color: white;
-    top: -200px;
+    top: -240px;
     border-radius: 10px;
   }
 }
@@ -626,6 +626,8 @@ textarea:active {
   .header__menu li {
     width: 100%;
     text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -1439,6 +1441,12 @@ textarea:active {
   background-size: cover;
 }
 
+@media (max-width: 480px) {
+  .callback {
+    background-image: none;
+  }
+}
+
 .callback--mod {
   height: 655px;
   background-image: url("../img/callback-mod.png");
@@ -1449,6 +1457,7 @@ textarea:active {
 @media (max-width: 480px) {
   .callback--mod {
     height: 100%;
+    background-image: none;
   }
 }
 
@@ -1642,7 +1651,7 @@ textarea:active {
   height: 1px;
   background-color: #666;
   left: -418px;
-  top: 170px;
+  top: 180px;
 }
 
 @media (max-width: 480px) {
@@ -1719,7 +1728,7 @@ textarea:active {
   position: relative;
   float: left;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .checkbox input {
@@ -1861,7 +1870,13 @@ input[type=submit] {
 
 @media (max-width: 480px) {
   .gallery__slider {
-    margin-bottom: 90px;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -2220,7 +2235,7 @@ input[type=submit] {
 
 @media (max-width: 480px) {
   .comand__elem-title:before {
-    left: 100px;
+    left: 160px;
   }
 }
 
@@ -2837,6 +2852,12 @@ input[type=submit] {
   margin-bottom: 10px;
 }
 
+@media (max-width: 480px) {
+  .footer__adress {
+    font-size: 13px;
+  }
+}
+
 .footer__adress:before {
   position: absolute;
   display: block;
@@ -2863,6 +2884,12 @@ input[type=submit] {
   margin-bottom: 10px;
 }
 
+@media (max-width: 480px) {
+  .footer__number {
+    font-size: 13px;
+  }
+}
+
 .footer__number:before {
   position: absolute;
   display: block;
@@ -2886,6 +2913,12 @@ input[type=submit] {
   padding-left: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .footer__email {
+    font-size: 13px;
+  }
 }
 
 .footer__email:before {

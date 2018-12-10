@@ -65,7 +65,9 @@
     margin-bottom: 185px;
 
     @include breakpoint(max-width 480px){
-      margin-bottom: 90px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
     }
 
     .slick-prev{
