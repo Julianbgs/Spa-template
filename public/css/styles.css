@@ -857,6 +857,7 @@ textarea:active {
 .button-elem--mod {
   margin-top: -25px;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 @media (max-width: 480px) {

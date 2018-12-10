@@ -100,6 +100,7 @@
   &--mod{
     margin-top: -25px;
     margin-bottom: 10px;
+    font-size: 18px;
   }
 
   @include breakpoint(max-width 480px){
