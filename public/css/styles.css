@@ -850,14 +850,13 @@ textarea:active {
   box-sizing: border-box;
   margin-top: 40px;
   border: none;
-  width: 202px;
+  width: auto;
   height: 54px;
 }
 
 .button-elem--mod {
   margin-top: -25px;
   margin-bottom: 10px;
-  font-size: 18px;
 }
 
 @media (max-width: 480px) {
@@ -1491,6 +1490,12 @@ textarea:active {
   }
 }
 
+@media (max-width: 400px) {
+  .callback__form {
+    height: 134%;
+  }
+}
+
 @media (max-width: 320px) {
   .callback__form {
     height: 140%;
@@ -1677,27 +1682,37 @@ textarea:active {
 }
 
 .callback__elem-submit {
-  position: relative;
-  float: left;
-}
-
-.callback__elem-submit:after {
   position: absolute;
   display: block;
-  content: "";
   width: 24px;
   height: 16px;
   background-image: url("../img/icons/button-arrow.png");
   background-repeat: no-repeat;
   top: 24px;
-  right: -70px;
+  right: 12px;
+}
+
+@media (max-width: 768px) {
+  .callback__elem-submit {
+    right: -65px;
+  }
 }
 
 @media (max-width: 480px) {
-  .callback__elem-submit:after {
-    right: -196px;
-    top: -69px;
+  .callback__elem-submit {
+    right: 12px;
   }
+}
+
+@media (max-width: 320px) {
+  .callback__elem-submit {
+    right: 44px;
+  }
+}
+
+.callback__submit {
+  position: relative;
+  float: left;
 }
 
 .checkbox {

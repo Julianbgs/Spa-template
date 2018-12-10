@@ -48,6 +48,10 @@
         top: 0;
       }
 
+      @include breakpoint(max-width 400px){
+        height: 134%;
+      }
+
       @include breakpoint(max-width 320px){
         height: 140%;
       }
@@ -217,25 +221,31 @@
   }
 
   &__elem-submit{
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 16px;
+    background-image: url("../img/icons/button-arrow.png");
+    background-repeat: no-repeat;
+    top: 24px;
+    right: 12px;
+
+    @include breakpoint(max-width 768px){
+      right: -65px;
+    }
+
+    @include breakpoint(max-width 480px){
+      right: 12px;
+    }
+
+    @include breakpoint(max-width 320px){
+      right: 44px;
+    }
+  }
+
+  &__submit{
     position: relative;
     float: left;
-
-    &:after{
-      position: absolute;
-      display: block;
-      content: "";
-      width: 24px;
-      height: 16px;
-      background-image: url("../img/icons/button-arrow.png");
-      background-repeat: no-repeat;
-      top: 24px;
-      right: -70px;
-
-      @include breakpoint(max-width 480px){
-        right: -196px;
-        top: -69px;
-      }
-    }
   }
 }
 

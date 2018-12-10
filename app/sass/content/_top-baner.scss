@@ -94,13 +94,12 @@
   box-sizing: border-box;
   margin-top: 40px;
   border: none;
-  width: 202px;
+  width: auto;
   height: 54px;
 
   &--mod{
     margin-top: -25px;
     margin-bottom: 10px;
-    font-size: 18px;
   }
 
   @include breakpoint(max-width 480px){
