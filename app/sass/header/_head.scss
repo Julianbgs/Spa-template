@@ -11,6 +11,14 @@
     height: 173px;
     background-image: url("../img/header-bg.png");
 
+    @include breakpoint(max-width 1024px){
+      position: absolute;
+      float: left;
+      width: 100%;
+      z-index: 1;
+      background-image: none;
+    }
+
     @include breakpoint(max-width 480px){
       position: absolute;
       float: left;
@@ -86,7 +94,9 @@
     }
 
     @include breakpoint(max-width 768px){
-      width: 27%;
+      width: 40%;
+      font-size: 12px;
+
     }
 
     @include breakpoint(max-width 480px){
@@ -145,7 +155,8 @@
     }
 
     @include breakpoint(max-width 768px){
-      width: 23%;
+      width: 35%;
+      font-size: 12px;
     }
 
     @include breakpoint(max-width 480px){
@@ -206,6 +217,7 @@
       padding-left: 20px;
     }
 
+
     @include breakpoint(max-width 480px){
       width: 100%;
       text-align: center;
@@ -249,13 +261,14 @@
     margin-left: 95px;
 
 @include breakpoint(max-width 768px){
-  margin-left: 0;
+  margin-left: 90px;
 }
 
     @include breakpoint(max-width 480px){
       width: 100%;
       justify-content: center;
       margin-top: 0;
+      margin-left: 0;
     }
 
       &-elem{

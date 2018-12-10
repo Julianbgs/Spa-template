@@ -232,7 +232,8 @@
       right: -70px;
 
       @include breakpoint(max-width 480px){
-        right: 11px;
+        right: -196px;
+        top: -69px;
       }
     }
   }
